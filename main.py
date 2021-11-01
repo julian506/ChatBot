@@ -124,6 +124,20 @@ parejasLogicaPredicados = [
 	['salir', ["Gracias por hablar conmigo.", "Adiós.", "Gracias, queda pendiente el café", "Que tengas un buen día!"]],
 ]
 
+parejasLogicaPredicados = [
+	# [ '(.*)logica(.*)predicados(.*)', ['Es una representación formal de conocimiento. Está basada en la idea de que las sentencias expresan relaciones entre los objetos o cualidades o atributos de estos.'] ],
+    [ limpiarEntrada("¿Qué es la lógica de predicados?"), [ random.choice(prefijos) +  'Es una representación formal de conocimiento. Está basada en la idea de que las sentencias expresan relaciones entre los objetos o cualidades o atributos de estos.'] ],
+	# [ '((.*)logica(.*)|(.*)primer orden(.*))', ['La lógica es el estudio del razonamiento y si este es correcto, se centra en la relación entre las afirmaciones y no en el contenido de una afirmación en particular.'] ],
+    [ limpiarEntrada("¿Qué es la lógica de primer orden?"), [random.choice(prefijos) + 'La lógica es el estudio del razonamiento y si este es correcto, se centra en la relación entre las afirmaciones y no en el contenido de una afirmación en particular.'] ],
+	# [ '((.*)centra logica primer orden(.*)|centra logica primer orden)', ['La lógica de primer orden se centra en la relación entre las afirmaciones y no en el contenido de una afirmación en particular'] ],
+    [ limpiarEntrada("¿En qué se centra la lógica de primer orden?"), [random.choice(prefijos) + 'La lógica de primer orden se centra en la relación entre las afirmaciones y no en el contenido de una afirmación en particular'] ],
+	# [ '', [] ],
+	# [ '', [] ],
+	# [ '', [] ],
+
+	['salir', ["Gracias por hablar conmigo.", "Adiós.", "Gracias, queda pendiente el café", "Que tengas un buen día!"]],
+]
+
 
 
 
